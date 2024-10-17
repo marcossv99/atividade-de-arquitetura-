@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    h1{
+        color: white;
+    }
+    button{
+        padding: 10px;
+        color: white;
+        background-color: rgb(76, 76, 76);
+        border-radius: 5px;
+        border: none;
+        transition-duration:0.3s;
+    }
+    button:hover{
+        padding: 10px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(241, 222, 15);
+        border-radius: 5px;
+        border: none;
+    }
+    
+    p{
+        color: white;
+    }
+    input{
+        margin: 10px;
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+    input::after{
+        outline: none;
+    }
+
+</style>
+<body>
+
+    <h1>Conversor de Temperatura</h1>
+    <input type="number" id="celsius" placeholder="Celsius">
+    <button onclick="converter()">Converter</button>
+    <p id="resultado"></p>
+
+    <script>
+        function converter() {
+            var celsius = document.getElementById('celsius').value;
+            var fahrenheit = (celsius * 9/5) + 32;
+            document.getElementById('resultado').innerText = celsius + "°C é igual a " + fahrenheit.toFixed(2) + "°F";
+        }
+    </script>
+
+</body>
+</html>

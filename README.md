@@ -1,0 +1,3 @@
+1 - Concentrar toda a lógica, interface e dados em um único arquivo, em vez de dividi-los em camadas separadas, traz várias desvantagens, especialmente em termos de manutenção, escalabilidade e organização do código. 
+2 - Cada camada tem uma função específica e não precisa saber os detalhes do que acontece nas outras camadas. Isso facilita a manutenção, porque se você precisa alterar uma camada, você não precisa mexer nas outras, isso significa que você pode atualizar, adicionar ou substituir partes do código sem comprometer o sistema inteiro.
+3 -  Essencialmente, ela permite que cada "filtro" transforme os dados e passe o resultado adiante pelo "pipe" para o próximo filtro. Os principais benefícios são: Modularidade, reutilização, flexibilidade e manuntenção.
