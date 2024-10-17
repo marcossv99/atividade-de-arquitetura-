@@ -33,6 +33,6 @@ document.getElementById("textForm").addEventListener("submit", function(event) {
 
     const resultado = processarTexto(inputText);
 
-    document.getElementById("saidaTexto").textContent = "Texto Processado: " + resultado.textoProcessado;
-    document.getElementById("contadorDePalavras").textContent = "Numero de Palavras: " + resultado.numeroDePalavras;
+    document.getElementById("saidaTexto").textContent = "Texto Processado:  " + resultado.textoProcessado;
+    document.getElementById("contadorDePalavras").textContent = "Numero de Palavras:  " + resultado.numeroDePalavras;
 });

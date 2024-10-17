@@ -10,7 +10,7 @@ function exibirUsuarios() {
     userList.innerHTML = ""; 
     usuarios.forEach(usuario => {
         const li = document.createElement("li");
-        li.textContent = `Nome: ${usuario.nome}, Idade: ${usuario.idade}`;
+        li.textContent = `Nome:  ${usuario.nome}, Idade:  ${usuario.idade}`;
         userList.appendChild(li);
     });
 }

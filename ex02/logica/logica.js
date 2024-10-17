@@ -4,7 +4,7 @@ function validarIdade(idade) {
 
 function cadastrar(nome, idade) {
     if (!validarIdade(idade)) {
-        alert("A idade deve ser maior que 18 anos");
+        alert("A idade deve ser maior que 18 anos ");
         return;
     }
     salvarUsuario(nome, idade);
